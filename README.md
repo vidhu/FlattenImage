@@ -11,9 +11,15 @@ Solution is to generate several images each containing 1 polygon and the 1 image
 
 This is one use case but there can be multiple other
 
+## Installation
+```sh
+npm install flatten-image --save
+```
+
 ## How to use it
 
 We want to merge these images
+(download these images to try it out)
 
 ![Base Image](https://i.imgur.com/12Lnxm7.png)
 ![Polygon 1](https://i.imgur.com/rmu2J4x.png)

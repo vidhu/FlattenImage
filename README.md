@@ -19,7 +19,7 @@ We want to merge these images
 ![Polygon 1](https://i.imgur.com/rmu2J4x.png)
 ![Polygon 2](https://i.imgur.com/PMRNbPO.png)
 
-```
+```js
 const merge = require('../build/.').Merge;
 const fs = require('fs');
 

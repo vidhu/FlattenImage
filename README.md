@@ -1,4 +1,4 @@
-# Image Merger
+# Flatten Image 
 Developed to be used with google maps images but can be used with any images of same width and height
 
 ## Motive

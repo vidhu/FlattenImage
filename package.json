@@ -1,15 +1,19 @@
 {
-  "name": "image-diff",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "flatten-image",
+  "version": "0.1.0",
+  "description": "Flatten an array of images into one by merging the differences",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vidhu/FlattenImage"
+  },
+  "main": "build/index.js",
   "scripts": {
     "build": "babel index.js -d build --source-maps",
     "lint": "eslint index.js test/test.js",
     "test": "node test/test.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Vidhu <vidhu@bu.edu>",
+  "license": "MIT",
   "dependencies": {
     "pngjs": "^3.3.3"
   },

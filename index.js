@@ -49,7 +49,11 @@ const calcDiff = (base, poly) => {
   return diff;
 };
 
-const colorDelta = (img1, img2, k, m, yOnly) => {
+/* Measuring perceived color difference using YIQ NTSC
+transmission color space in mobile applications 
+http://www.progmat.uaem.mx:8080/artVol2Num2/Articulo3Vol2Num2.pdf */
+
+const colorDelta = (img1, img2, k, m) => {
   var a1 = img1[k + 3] / 255,
     a2 = img2[m + 3] / 255,
     r1 = blend(img1[k + 0], a1),
@@ -59,8 +63,6 @@ const colorDelta = (img1, img2, k, m, yOnly) => {
     g2 = blend(img2[m + 1], a2),
     b2 = blend(img2[m + 2], a2),
     y = rgb2y(r1, g1, b1) - rgb2y(r2, g2, b2);
-
-  if (yOnly) return y; // brightness difference only
 
   var i = rgb2i(r1, g1, b1) - rgb2i(r2, g2, b2),
     q = rgb2q(r1, g1, b1) - rgb2q(r2, g2, b2);

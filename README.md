@@ -1,15 +1,15 @@
 # Flatten Image 
-Developed to be used with google maps images but can be used with any images of same width and height
+Developed to be used with google maps images but can be used with any images, each of same width and height as others.
 
 ## Motive
-Using google maps API, you can create several drawing and polygons. If you need a PNG image of this, you are out of luck
+Using google maps API, you can create several drawings and polygons. If you need a PNG image of this, you are out of luck.
 
 The static image API could be used to generate an image, however, only one polygon can be drawn. You can't pass in multiple polygons unfortunatly.
 
 ## Solution
 Solution is to generate several images each containing 1 polygon and the 1 image containing nothing. Then take a diff of these images with the base image to get only the polyons. Then merge these images. 
 
-This is one use case but there can be multiple other
+This is one use case but there can be multiple others
 
 ## Installation
 ```sh

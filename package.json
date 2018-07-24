@@ -1,6 +1,6 @@
 {
   "name": "flatten-image",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Flatten an array of images into one by merging the differences",
   "repository": {
     "type": "git",
